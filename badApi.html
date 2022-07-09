@@ -19,6 +19,7 @@
         fetch('https://jsonplaceholder.typicode.com/people') //changes users on people
             .then(response => response.json())
             .then(json => displayUser(json))
+            
             //when a promise fail, tell me what whapped
             .catch(error => console.log(error))
 
